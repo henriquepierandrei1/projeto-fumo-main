@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+body{
+    background-image: linear-gradient(to right, rgb(255, 247, 255), rgb(255, 255, 255));
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.card-002 {
+    box-sizing: border-box;
+    width: 32%;
+    height: auto;
+    background-image: linear-gradient(to right, rgb(255, 0, 234), rgb(177, 44, 170));
+    border: 5px solid rgb(249, 61, 255);
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+  }
+  
+  .card-002:hover {
+    border: 6px solid rgb(246, 255, 169);
+    transform: scale(1.05);
+  }
+  
+  .card-002:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+
+.card {
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    width: 80%;
+    margin: 10px;
+    border-radius: 10px;
+    border-radius: 10px;
+    color: rgb(17, 17, 17);
+    box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+  }
+  
+  .header .image {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 9999px;
+    object-fit: cover;
+    background-color: royalblue;
+  }
+
+  video {
+    width: 100%;
+    max-width: 800px;
+    height: max-content;
+    border-radius: 5px;
+}
+  
+  .stars {
+    display: flex;
+    justify-content: center;
+    grid-gap: 0.125rem;
+    gap: 0.125rem;
+    color: rgb(187, 255, 0);
+    padding-right: 50px;
+  }
+  
+  .stars svg {
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  .name {
+    margin-top: 0.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(19, 18, 18);
+  }
+  
+  .message {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-top: 1rem;
+    color: rgb(46, 46, 48);
+  }
+
+
+
+
+body{
+    height: auto;
+    padding-bottom: 5%;
+    overflow-x: hidden;
+}
+
+.carousel-control-prev,.carousel-control-next{
+    height: 100px;
+    width: max-content;
+    padding: 2%;
+    margin: 10% 10% 0% 10%;
+    background-color: transparent;
+    border-radius: 50px;
+    transition-duration: 1s;
+    
+}
+
+.carousel-control-prev:hover,.carousel-control-next:hover, .carousel-control-prev:active,.carousel-control-next:active{
+    scale: 1.1;
+    font-weight: bold;
+    
+}
+
+#btnn {
+    color: #131313;
+    background: #ea00ff;
+    text-shadow: 0 0 5px #ffffffc2, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #fbffe685, 0 0 20px #d6ffb091, 0 0 50px #f8ff8f7e,
+      0 0 100px #f2ffba;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ffffff9c;
+    transition: 0.5s ease;
+    user-select: none;
+  }
+  
+  #btnn:hover,
+  :focus {
+    color: #131313;
+    
+    background: transparent;
+    
+    
+  }
+  
+
+
+.article-01{
+    background-image: linear-gradient(to right, rgb(225, 0, 255), rgb(141, 4, 134));
+    width: 95%;
+    padding-bottom: 3%;
+    margin: auto;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.432);
+    border-radius: 20px;
+    
+}
+
+.counter {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: none; /* Inicialmente oculto */
+  }
+
+.strong-light {
+    background-color: rgb(239, 114, 255);
+    padding: 5px;
+    color: #ffffff;
+    font-weight: 900;
+    animation: pulse 3s infinite; /* Define a animação 'pulse' com duração de 3 segundos, repetindo infinitamente */
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.2; /* Começa com uma opacidade baixa */
+    }
+    50% {
+      opacity: 1; /* Aumenta a opacidade pela metade do tempo da animação */
+    }
+    100% {
+      opacity: 0.2; /* Retorna à opacidade baixa */
+    }
+  }
+  
+
+@keyframes piscar {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.piscando {
+    animation: piscar 3s infinite;
+    
+}
+
+
+
+h2{
+    color: rgb(255, 251, 194);
+    text-shadow: 2px 1px 10px rgba(246, 255, 198, 0.534);
+    font-size: 4.5em;
+    font-family: Sora;
+    padding: 2%;
+    font-weight: 900;
+    text-align: center;
+    
+}
+
+.btn-01{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 50px rgb(246, 255, 169);
+    width: max-content;
+    color: rgb(255, 0, 242);
+    font-weight: 900;
+    margin-left: 2%;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition-duration: 1s;
+}
+
+.btn-02{
+    background-color: rgb(34, 34, 34);
+    width: max-content;
+    color: rgb(22, 22, 22);
+    font-weight: 700;
+    width: 40%;
+    padding: 2%;
+    border-radius: 50px;
+    margin-left: 2%;
+    font-size: 2em;
+    padding: 10px;
+    border: none;
+    transition-duration: 1s;
+}
+
+.btn-02:hover, .btn-02:active, .btn-02::after{
+    background-color: rgb(10, 10, 10);
+    scale: 1.02;
+    color: rgb(255, 255, 255);
+    
+}
+
+a:active{background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 3%;
+    border-radius: 50px;
+    border: none;
+}
+
+.btn-01:hover, .btn-01:active {
+    font-weight: 900;
+    box-shadow: 2px 2px 50px rgb(246, 255, 169);
+    background-color: rgb(246, 255, 169);
+    color: rgb(20, 19, 19);
+    scale: 1.1;
+}
+
+i{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.img-result{
+    margin: auto;
+    display: block;
+    box-shadow: none;
+    border: 1px solid gray;
+}
+
+
+.div-text{
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(14, 15, 14));
+}
+
+.faq-button:hover, .faq-button:active{
+    transform: scale(1.05);
+    background-color: rgb(14, 14, 14);
+    color: white;
+    text-shadow: none;
+    border-radius: 10px;
+}
+
+
+
+h4{
+    margin-left: 2%;
+    color: rgb(216, 214, 214);
+    font-weight: 300;
+}
+strong{
+    font-weight: 900;
+}
+
+img{
+    border-radius: 5px;
+    
+}
+
+p{  
+    margin-left: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+}
+
+#div-header{
+    padding: 1%;
+    margin: auto;
+}
+
+.faq-button{
+    
+    width: 80%;
+    border: 1px solid gray;
+    display: block;
+    font-family: Sora;
+    padding: 10px;
+    margin: auto;
+    font-size: 2em;
+    transition-duration: 1s;
+}
+
+.article-02{
+    width: 75%;
+    margin: auto;
+    height: auto;
+    padding: 1%;
+    display: flex;
+}
+
+
+
+header{
+    display: flex;
+    padding: 3%;
+    background-image: linear-gradient(to right, rgb(225, 0, 255), rgb(141, 4, 134));
+    width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.425);
+    margin-bottom: 6%;
+    
+}
+
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+  }
+  
+  .custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(255, 255, 255);
+    
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  .custom-checkbox:checked ~ .checkmark {
+    background-color: rgb(255, 0, 200);
+    box-shadow: 0 3px 7px rgb(234, 0, 255);
+    color: white;
+  }
+  
+  .custom-checkbox:checked ~ .checkmark:after {
+    display: block;
+   
+  }
+
+  h3{
+    font-size: 4em;
+   }
+  
+  @keyframes checkAnim {
+    0% {
+      height: 0;
+    }
+  
+    100% {
+      height: 10px;
+    }
+  }
+  
+  .custom-checkbox:checked ~ .checkmark:after {
+    animation: checkAnim 0.2s forwards;
+    
+  }
+
+  .card-03{
+    margin-top: 160px;
+  }
+  
+.div-001{
+    margin-top: 20%;
+}
+
+.div-002{
+    margin-top: 28%
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    .div-001{
+        margin-top: 30%;
+    }
+    .div-002{
+        margin-top: 45%;
+    }
+
+    .carousel-control-prev,.carousel-control-next{
+        background-color: transparent;
+        margin: 10% 0% 0% 0%;
+    }
+    h2{
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 2.5em;
+        
+    }
+
+    #dr-div{
+        flex-direction: column;
+    }
+
+    .card-body{
+       
+        font-size: 0.5em;
+        text-wrap: wrap;
+        color: white;
+        text-align: justify;
+        
+    }
+
+    .card-002{
+        width: 95%;
+        margin: 10px auto 10px auto;
+        visibility: hidden;
+        
+        height: auto;
+    }
+
+    #div-opc{
+        flex-direction: column;
+    }
+
+    .article-02{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .btn-02{
+        width: 100%;
+        font-size: 1.3em;
+    }
+
+    #div-text-02{
+        margin:auto;
+        display: block;
+    }
+
+
+    header{
+        display: block;
+    }
+    .small-h2{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    img{
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    #avaliation{
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq-button{
+        font-size: 1em;
+    }
+    .btn-01{
+        width: 95%;
+    }    
+
+    .card-03{
+        margin-top: 190px;
+    }
+}
