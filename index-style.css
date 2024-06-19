@@ -8,13 +8,31 @@ body{
     overflow-x: hidden;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  display: block;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 .card-002 {
     box-sizing: border-box;
     width: 32%;
     height: auto;
-    background-image: linear-gradient(to right, rgb(255, 0, 234), rgb(177, 44, 170));
-    border: 5px solid rgb(249, 61, 255);
+    background-image: linear-gradient(to right, rgb(20, 20, 20), rgb(43, 42, 43));
+    border: 5px solid rgb(249, 255, 170);
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
     backdrop-filter: blur(6px);
     border-radius: 17px;
@@ -42,14 +60,15 @@ body{
 
 
 .card {
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(248, 248, 248));
     padding: 2rem;
     width: 80%;
     margin: 10px;
     border-radius: 10px;
-    border-radius: 10px;
+    border: none;
+    
     color: rgb(17, 17, 17);
-    box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
+    box-shadow: 0 20px 30px rgba(5, 5, 5, 0.24);
   }
   
   .header {
@@ -64,7 +83,7 @@ body{
     width: 4rem;
     border-radius: 9999px;
     object-fit: cover;
-    background-color: royalblue;
+    background-image: linear-gradient(to right, rgb(22, 22, 22), rgb(39, 34, 39));
   }
 
   video {
@@ -133,7 +152,7 @@ body{
 
 #btnn {
     color: #131313;
-    background: #ea00ff;
+    background: #faf889;
     text-shadow: 0 0 5px #ffffffc2, 0 0 10px #ffffff, 0 0 20px #ffffff;
     box-shadow: 0 0 5px #fbffe685, 0 0 20px #d6ffb091, 0 0 50px #f8ff8f7e,
       0 0 100px #f2ffba;
@@ -153,7 +172,7 @@ body{
   
   #btnn:hover,
   :focus {
-    color: #131313;
+    color: #c57a7a;
     
     background: transparent;
     
@@ -163,7 +182,7 @@ body{
 
 
 .article-01{
-    background-image: linear-gradient(to right, rgb(225, 0, 255), rgb(141, 4, 134));
+    background-image: linear-gradient(to right, rgb(22, 22, 22), rgb(39, 34, 39));
     width: 95%;
     padding-bottom: 3%;
     margin: auto;
@@ -185,9 +204,9 @@ body{
   }
 
 .strong-light {
-    background-color: rgb(239, 114, 255);
+    background-color: rgb(253, 255, 109);
     padding: 5px;
-    color: #ffffff;
+    color: #1f1e1e;
     font-weight: 900;
     animation: pulse 3s infinite; /* Define a animação 'pulse' com duração de 3 segundos, repetindo infinitamente */
   }
@@ -313,15 +332,19 @@ i{
     border-radius: 10px;
 }
 
-
+.fa-check{
+  color: rgb(240, 255, 28);
+}
 
 h4{
     margin-left: 2%;
-    color: rgb(216, 214, 214);
+    color: rgb(255, 255, 255);
     font-weight: 300;
 }
 strong{
-    font-weight: 900;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
 }
 
 img{
@@ -367,7 +390,7 @@ p{
 header{
     display: flex;
     padding: 3%;
-    background-image: linear-gradient(to right, rgb(225, 0, 255), rgb(141, 4, 134));
+    background-image: linear-gradient(to right, rgb(22, 22, 22), rgb(39, 34, 39));
     width: 100%;
     height: auto;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.425);
@@ -413,15 +436,15 @@ header{
     top: 5px;
     width: 5px;
     height: 10px;
-    border: solid rgb(255, 255, 255);
+    border: solid rgb(32, 32, 32);
     
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
   }
   
   .custom-checkbox:checked ~ .checkmark {
-    background-color: rgb(255, 0, 200);
-    box-shadow: 0 3px 7px rgb(234, 0, 255);
+    background-color: rgb(255, 244, 87);
+    box-shadow: 0 3px 7px rgb(252, 219, 36);
     color: white;
   }
   
