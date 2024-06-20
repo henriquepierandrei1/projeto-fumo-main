@@ -578,4 +578,8 @@ header{
     .card-03{
         margin-top: 190px;
     }
+
+    #div-zap{
+      flex-direction: column;
+    }
 }
